@@ -1,0 +1,12 @@
+.name,
+.genre,
+.author {
+    padding-bottom: 1em;
+    padding-left: .5em;
+    
+}
+
+span{
+    padding-right: 1em;
+}
+
