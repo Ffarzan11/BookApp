@@ -10,22 +10,25 @@ class AddBook extends React.Component {
                 <div className="name">
                     <label >
                         <span>Name :</span>
-                        <input type="text" name="name" />
+                            <input className="inp" type="text" name="name" />
                     </label>
                 </div>
                 <div className="genre">
                     <label >
                         <span>Genre :</span>
-                        <input type="text" name="name" />
+                            <input className="inp" type="text" name="name" />
                     </label>
                 </div>
                 <div className="author">
                     <label >
                         <span>Author:</span>
-                        <input type="text" name="name" />
+                            <input className="inp" type="text" name="name" />
                     </label>
                 </div>
-                <input type="submit" value="Submit" />
+                <div className="sub">
+                     <button type="button" className="btn btn-primary">Add</button>
+                </div>
+                
             </form>
            </div>
         )

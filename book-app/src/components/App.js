@@ -5,11 +5,25 @@ import AddBook from "./AddBook"
 import BookList from "./BookList"
 
 function App() {
+  const books = [
+    {
+      id:"1",
+      name: "wimpy kid",
+      genre: "comedy",
+      author: "xyz"
+    },
+    {
+      id: "2",
+      name: "sherlock holmes",
+      genre: "mystery",
+      author: "doyale"
+    }
+  ]
   return (
     <div>
       <Header/>
      <AddBook> </AddBook>
-     {/* <BookList></BookList>  */}
+     <BookList books = {books}/> 
     </div>
   );
 }
