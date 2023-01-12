@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import header from "./style/header.css"
 
 const Header = () => {
@@ -8,8 +8,7 @@ const Header = () => {
                <h2 className = "text-center">Book App</h2>
             </div>
         </nav>
-       
-        );
+    );
     
 };
 export default Header;
