@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { uuid } from "uuidv4";
 import './style/App.css';
 import Header from "./Header"
@@ -27,9 +28,15 @@ function App() {
   }, [books]);
   return (
     <div>
-      <Header />
-      <AddBook addBookHandler={addBookHandler} />
-      <BookList books={books} getBookId = {removeBookHandler}/>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<BookList  books={books} getBookId={removeBookHandler} />} />
+          <Route path="/add" exact element={<AddBook addBookHandler={addBookHandler} />} />
+        </Routes>
+        {/* <AddBook  />
+        <BookList /> */}
+      </Router>
     </div>
   );
 }

@@ -17,6 +17,7 @@ class AddBook extends React.Component {
         }
         this.props.addBookHandler(this.state);
         this.setState({name:"",genre:"",author:""});
+        this.props.history.push("/");
     };
     render(){
         return(
