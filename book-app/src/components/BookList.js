@@ -5,7 +5,6 @@ import bookList from "./style/bookList.css";
 import { Link } from "react-router-dom";
 
 const BookList = (props) => {
-    console.log(props);
     const deleteContactHandler = (id) => {
         props.getBookId(id);
     };

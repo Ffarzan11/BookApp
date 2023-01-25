@@ -17,7 +17,6 @@ class AddBook extends React.Component {
         }
         this.props.addBookHandler(this.state);
         this.setState({ name: "", genre: "", author: "" });
-       // this.props.history.push("/");
     };
     render() {
         return (
@@ -31,7 +30,7 @@ class AddBook extends React.Component {
                                 type="text"
                                 name="name"
                                 value={this.state.name}
-                                onChange={(e) => this.setState({ name: e.target.value })} />
+                                 onChange={(e) => this.setState({ name: e.target.value })} />
                         </label>
                     </div>
                     <div className="genre">
@@ -62,7 +61,7 @@ class AddBook extends React.Component {
 
                 </form>
             </div>
-        )
+        );
     }
 }
 export default AddBook;
