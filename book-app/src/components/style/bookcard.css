@@ -13,3 +13,9 @@
     padding: 5px;
     width: 50px;
 }
+a{
+    color: black
+}
+a:hover{
+    color:rgb(61, 139, 181)
+}

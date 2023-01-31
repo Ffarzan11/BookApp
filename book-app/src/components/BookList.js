@@ -23,7 +23,7 @@ const BookList = (props) => {
             <div className="head d-flex justify-content-between ps-4 pe-4">
                 <p className="h3 text-left "> Book List</p>
                 <Link to="/add">
-                    <button className="btn btn-primary">Add Contact</button>
+                    <button className="btn btn-primary">Add Book</button>
                 </Link>
             </div>
             <div>{renderBookList}</div>

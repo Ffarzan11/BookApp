@@ -5,6 +5,7 @@ import './style/App.css';
 import Header from "./Header"
 import AddBook from "./AddBook"
 import BookList from "./BookList"
+import BookDetails from "./BookDetails";
 
 const { v4: uuidv4 } = require('uuid')
 function App() {
@@ -31,7 +32,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" exact element={<BookList books={books} getBookId={removeBookHandler} />} />
+          <Route path="/book/:id" exact element={<BookDetails />} />
           <Route path="/add" exact element={<AddBook addBookHandler={addBookHandler} />} />
+         
         </Routes>
       </Router>
       {/* <Header/>

@@ -1,0 +1,14 @@
+.card-img-top {
+    position: relative;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    left: 25%;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 40%;
+}
